@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Опросник для владельца кота</h1>
+    <fieldset>
+      <legend>Имя</legend>
+      <div>
+        <label for="name">Кличка питомца</label>
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="boss">Имя вдалельца</label>
+        <input type="text" id="boss" />
+      </div>
+      <br />
+      <div>
+        <label for="contact">Контакты владельца</label>
+        <input type="text" id="contact" />
+      </div>
+    </fieldset>
+    <div>
+      <h3>Выберите породу</h3>
+      <select>
+        <option value="first breed">Британская</option>
+        <option value="second breed">Мейн-кун</option>
+        <option value="third breed">Русская голубая</option>
+        <option value="fourth breed">Персидская</option>
+        <option value="fifth breed">Беспородная кошка</option>
+      </select>
+    </div>
+    <div>
+      <h3>Чем питается?</h3>
+      <input type="checkbox" name="food" value="1" id="dry" />
+      <label for="dry">Сухой корм</label><br />
+      <input type="checkbox" name="food" value="2" id="wet" />
+      <label for="wet">Влажный корм</label><br />
+      <input type="checkbox" name="food" value="3" id="nature" />
+      <label for="nature">Натуральный корм</label><br />
+    </div>
+    <div>
+      <h3>Пол питомца</h3>
+      <input type="radio" name="gender" value="male" id="man" />
+      <label for="man">Самец</label><br />
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Самка</label>
+    </div>
+    <div>
+      <p><b>Комментарий</b></p>
+      <textarea rows="6" cols="40">
+Если хотите добавить что-то важное, можно написать здесь</textarea
+      >
+    </div>
+    <div>
+      Можете добавить фотографию питомца
+      <input type="file" />
+    </div>
+    <div>
+      <input type="submit" value="Сохранить" />
+    </div>
+  </body>
+</html>

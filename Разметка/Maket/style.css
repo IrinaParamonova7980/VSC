@@ -1,0 +1,63 @@
+header,
+.footer1,
+.footer0,
+.base,
+.article,
+.blok1,
+.blok2,
+.aside {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+header,
+.footer0 {
+  background-color: rgb(221, 241, 147);
+  padding: 10px;
+}
+
+.base {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+}
+
+.bloks {
+  display: flex;
+  height: auto;
+}
+
+.article {
+  flex: 0 1 auto;
+  justify-content: center;
+  width: 70%;
+  background-color: rgb(179, 202, 233);
+}
+
+.aside {
+  width: 30%;
+  background-color: rgb(228, 165, 84);
+}
+
+.blok1 {
+  margin: 5px;
+  background-color: rgb(243, 238, 170);
+}
+
+.blok2 {
+  width: auto;
+  margin: 5px;
+  background-color: rgb(243, 238, 170);
+}
+
+.footer0 {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: space-around;
+}
+
+.footer1 {
+  margin: 10px;
+  background-color: rgb(228, 224, 224);
+}

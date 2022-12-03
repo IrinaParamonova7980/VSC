@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header,
+      footer,
+      .base,
+      .article,
+      .aside {
+        border: 1px solid red;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      header {
+        height: 40px;
+      }
+
+      .base {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+
+      .article {
+        width: 70%;
+        flex: 0 1 auto;
+      }
+
+      .aside {
+        width: 30%;
+        flex: 0 1 auto;
+      }
+
+      footer {
+        height: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Шапка страницы</header>
+    <main>
+      <div class="base">
+        <article class="article">Основная часть</article>
+        <aside class="aside">Боковая область</aside>
+      </div>
+    </main>
+    <footer>Секция футера</footer>
+  </body>
+</html>

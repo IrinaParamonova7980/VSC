@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header,
+      .footer1,
+      .footer0,
+      .base,
+      .article,
+      .blok1,
+      .blok2,
+      .aside {
+        border: 1px solid red;
+        text-align: center;
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      header,
+      .footer0 {
+        background-color: rgb(245, 238, 238);
+        padding: 10px;
+      }
+
+      .base {
+        display: flex;
+        height: 100%;
+        align-items: stretch;
+      }
+
+      .bloks {
+        display: flex;
+        height: auto;
+      }
+
+      .article {
+        flex: 0 1 auto;
+        justify-content: center;
+        width: 70%;
+        background-color: rgb(248, 245, 206);
+      }
+
+      .aside {
+        width: 30%;
+        background-color: rgb(212, 236, 189);
+      }
+
+      .blok1 {
+        margin: 5px;
+        background-color: rgb(243, 238, 170);
+      }
+
+      .blok2 {
+        width: auto;
+        margin: 5px;
+        background-color: rgb(243, 238, 170);
+      }
+
+      .footer0 {
+        display: flex;
+        flex: 0 1 auto;
+        justify-content: space-around;
+      }
+
+      .footer1 {
+        margin: 10px;
+        background-color: rgb(228, 224, 224);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      Шапка страницы
+      <p>Что-то написано</p>
+    </header>
+    <main>
+      <div class="base">
+        <article class="article">
+          Основная часть
+          <p>Что-то написано</p>
+          <div class="bloks">
+            <div class="blok1">Еще блок 1</div>
+            <div class="blok1">Еще блок 2</div>
+          </div>
+          <div class="blok2">Еще блок 3</div>
+        </article>
+        <aside class="aside">
+          Боковая область
+          <p>Что-то написано</p>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="footer0">
+        <div class="footer1">
+          Секция футера 1
+          <p>Что-то написано</p>
+        </div>
+        <div class="footer1">
+          Секция футера 2
+          <p>Что-то написано</p>
+        </div>
+        <div class="footer1">
+          Секция футера 3
+          <p>Что-то написано</p>
+        </div>
+        <div class="footer1">
+          Секция футера 4
+          <p>Что-то написано</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.footer {
+  height: 5em;
+}
+
+.navbar-collapse,
+.navbar-brand {
+  margin: auto 50px;
+}

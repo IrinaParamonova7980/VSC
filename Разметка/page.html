@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p,
+      header,
+      main,
+      section,
+      aside,
+      footer {
+        border: 1px solid red;
+      }
+
+      header,
+      footer {
+        flex: 0 0 content;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+      }
+
+      body {
+        display: flex;
+        flex-flow: column;
+        min-height: 100vh;
+      }
+
+      nav {
+        width: 20vh;
+      }
+
+      aside {
+        width: 20vh;
+      }
+
+      section {
+        flex: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">Заголовок</header>
+    <main class="main">
+      <nav class="nav">Меню</nav>
+      <section class="section">Раздел</section>
+      <aside class="aside">Боковая надпись</aside>
+    </main>
+    <footer class="footer">Подвал</footer>
+  </body>
+</html>

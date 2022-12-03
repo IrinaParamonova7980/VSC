@@ -1,0 +1,173 @@
+body {
+  font-family: "Roboto Slab", Times, serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.header {
+  display: flex;
+  max-width: 1350px;
+  justify-content: space-between;
+  margin: 90px 74px 89px 76px;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 20px 20px 20px 10px;
+  }
+}
+
+.logo__picture {
+  width: 201px;
+  height: 40px;
+}
+.button {
+  padding: 15px;
+  background: #5222d0;
+  color: #ffffff;
+  border-radius: 100px;
+  font-family: "Intro ";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+}
+.button_size {
+  width: 270px;
+  height: 84px;
+}
+.button__icon {
+  width: 14px;
+  height: 14px;
+}
+.button__icon_size {
+  width: 41px;
+  height: 28px;
+}
+.button-text_size {
+  font-size: 35px;
+  line-height: 35px;
+}
+.button-action {
+  margin-top: 30px;
+}
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin-left: 126px;
+}
+@media screen and (max-width: 767px) {
+  .home-page {
+    margin-left: 5px;
+  }
+}
+.home-page__image {
+  max-width: 100%;
+  height: auto;
+}
+.home-page__content {
+  max-width: 542px;
+}
+.opportunities-page {
+  max-width: 1350px;
+  margin-left: 127px;
+}
+@media screen and (max-width: 767px) {
+  .opportunities-page {
+    margin-left: 5px;
+  }
+}
+.heading {
+  font-family: "Intro", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+}
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 40px;
+    line-height: 100%;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 365px;
+  margin: 35px;
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: auto;
+    margin: 15px;
+  }
+}
+.card__heading {
+  font-family: "Intro", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+}
+.card__heading_color {
+  color: #ffffff;
+}
+.card__content {
+  font-size: 20px;
+  line-height: 160%;
+}
+.subscribe {
+  height: 233px;
+  background-color: #ec615b;
+}
+.subscribe_heading {
+  margin: 25px auto auto 18px;
+}
+.subscribe__form {
+  margin: 6px auto auto 20px;
+}
+.subscribe__contact {
+  width: 323px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 160%;
+}
+.subscribe__button {
+  margin: 23px auto auto 18px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_position-home-page {
+  margin-top: 146px;
+}
+@media screen and (max-width: 767px) {
+  .footer_position-home-page {
+    margin-top: 0px;
+  }
+}
+.footer_position-opportunities-page {
+  margin: 114px auto 80px 126px;
+}
+@media screen and (max-width: 767px) {
+  .footer_position-opportunities-page {
+    margin: 10px auto 20px 10px;
+  }
+}
+.footer__menu {
+  padding: 17px;
+  font-size: 20px;
+  line-height: 160%;
+  color: #000000;
+  text-decoration: none;
+}
+.footer__menu_color {
+  color: #5222d0;
+}
+@media screen and (max-width: 767px) {
+  .footer_position_opportunities-page {
+    margin: 10px auto 20px 10px;
+  }
+}
