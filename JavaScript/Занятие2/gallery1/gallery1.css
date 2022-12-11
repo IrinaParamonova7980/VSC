@@ -1,0 +1,22 @@
+ 
+ .image{
+     display: block;
+    width: 60%;
+     margin: 1% auto;
+ }
+ 
+ .button-block{
+     display: flex;
+     justify-content: center;
+     
+ }
+ .button{
+     width: 70px;
+     padding: 3px;
+     margin: 1%;
+     background-color: blanchedalmond;
+     border: 1px solid black;
+     border-radius: 2px;
+     font-family: cursive, Courier, monospace;
+     color: black;
+ }

@@ -1,0 +1,15 @@
+.fon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: azure;
+  border: 1px solid azure;
+}
+.selected{
+  background-color: green;
+  border: 1px solid black;
+}
+

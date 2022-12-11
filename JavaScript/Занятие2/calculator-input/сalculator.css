@@ -1,0 +1,21 @@
+.calculator{
+  display: flex;
+  flex-direction: column;
+}
+
+#first-number,
+#second-number,
+#total{
+  width: 30%;
+  margin: 1%;
+
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background: green;
+  color: white;
+}
+
+
