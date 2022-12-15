@@ -1,14 +1,14 @@
-.calculator{
+.calculator {
   display: flex;
   flex-direction: column;
 }
 
 #first-number,
 #second-number,
-#total{
+#total,
+#divisionByZero {
   width: 30%;
   margin: 1%;
-
 }
 
 .button {
@@ -18,4 +18,6 @@
   color: white;
 }
 
-
+#divisionByZero {
+  color: red;
+}
