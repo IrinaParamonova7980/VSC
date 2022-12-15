@@ -7,9 +7,8 @@ function enterNumberAndCount(operation) {
 function enterNumber() {
   let a = Number(document.getElementById('first-number').value);
   let b = Number(document.getElementById('second-number').value);
-  return [a, b]; 
-  
-}
+   return [a, b]; 
+  }
 
 function outputTheResult(a, b, operation) {
   switch (operation) {
@@ -20,11 +19,18 @@ function outputTheResult(a, b, operation) {
       res = a - b;
       break;
     case "/":
-      res = a / b;
-      break;
+      if (b == 0) {
+        alert("На ноль делить нельзя");
+      }
+      else { res = a / b };
+            break;
     case "*":
       res = a + b;
       break;
   }
   return res;
-}
+  }
+
+
+
+ 
