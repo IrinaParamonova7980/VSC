@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link href="form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="heading">Зарегистрируйтесь у Кота</h1>
+          <div id="close" onclick="modalClose()">x</div>
+        </div>
+        <div class="modal-body">
+          <form name="form">
+            <p class="text">Как Вас зовут?</p>
+            <div class="blocks">
+              <div class="blocks-position">
+                <label for="firstname"></label>
+                <input type="text" id="firstname" placeholder="Имя" />
+                <div id="errorMessageFirstName"></div>
+              </div>
+              <div class="blocks-position">
+                <label for="lastname"></label>
+                <input type="text" id="lastname" placeholder="Фамилия" />
+                <div id="errorMessageLastName"></div>
+              </div>
+            </div>
+            <p class="text">Адрес электронной почты</p>
+            <label for="mail"></label>
+            <input type="email" id="mail" /><br />
+            <div id="errorMessageMail"></div>
+            <p class="text">Придумайте пароль</p>
+            <input type="password" id="firstpassword" />
+            <div id="errorMessageFirstPassword"></div>
+            <p class="text">Подтвердите пароль</p>
+            <input type="password" id="secondpassword" />
+            <div id="errorMessageSecondPassword"></div>
+            <p class="text">Дата рождения</p>
+            <div class="blocks">
+              <div class="blocks-position">
+                <label for="day"></label>
+                <input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max="31"
+                  id="day"
+                  placeholder="день"                 
+                />
+                <div id="errorMessageDay"></div>
+              </div>
+              <div class="blocks-position">
+                <select class="list-text" name="month">
+                  <option value="" selected>месяц</option>
+                  <option value="january">Январь</option>
+                  <option value="february">Февраль</option>
+                  <option value="march">Март</option>
+                  <option value="april">Апрель</option>
+                  <option value="may">Май</option>
+                  <option value="june">Июнь</option>
+                  <option value="july">Июль</option>
+                  <option value="august">Август</option>
+                  <option value="september">Сентябрь</option>
+                  <option value="october">Октябрь</option>
+                  <option value="november">Ноябрь</option>
+                  <option value="december">Декабрь</option>
+                </select>
+                <div id="errorMessageMonth"></div>
+              </div>
+              <div class="blocks-position">
+                <label for="year"></label>
+                <input
+                  type="text"
+                  id="year"
+                  placeholder="год"
+                  maxlength="2022"
+                />
+                <div id="errorMessageYear"></div>
+              </div>
+            </div>
+            <p class="text">Пол</p>
+            <input
+              type="radio"
+              class="text"
+              name="sex"
+              value="мужской"
+            />мужской
+            <input
+              type="radio"
+              name="sex"
+              class="text"
+              value="женский"
+            />женский
+            <div id="errorMessageSex"></div>
+            <p class="text">Мобильный телефон</p>
+            <label for="phone"></label>
+            <input type="text" id="phone" value="+7" />
+            <div id="errorMessagePhone"></div>
+            <button type="button" class="button" onclick="validate_form ( );">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="button-open" onclick="modalOpen ( );">
+      Форма регистрации
+    </button>
+    <script src="form.js"></script>
+  </body>
+</html>
