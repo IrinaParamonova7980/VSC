@@ -29,6 +29,8 @@ function outputTheResult(a, b, operation) {
     case "*":
       res = a + b;
       break;
+    default:
+      res = "неизвестное действие";
   }
   return res;
 }
