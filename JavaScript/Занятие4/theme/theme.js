@@ -1,8 +1,21 @@
-function selectionBackground() {
-  if (document.getElementById("backgroundcolor").value == "white")
+const backgroundcolor = document.getElementById("backgroundcolor");
+
+/*function selectionBackground() {
+  if (backgroundcolor.value == "white")
     document.body.style.background = "white";
-  if (document.getElementById("backgroundcolor").value == "blue")
-    document.body.style.background = "blue";
-  if (document.getElementById("backgroundcolor").value == "green")
+  if (backgroundcolor.value == "blue") document.body.style.background = "blue";
+  if (backgroundcolor.value == "green")
+    document.body.style.background = "green";
+}*/
+
+function selectionBackground() {
+switch (backgroundcolor.value){
+  case document.body.style.background = "white";
+}
+
+  if (backgroundcolor.value == "white")
+    
+  if (backgroundcolor.value == "blue") document.body.style.background = "blue";
+  if (backgroundcolor.value == "green")
     document.body.style.background = "green";
 }
