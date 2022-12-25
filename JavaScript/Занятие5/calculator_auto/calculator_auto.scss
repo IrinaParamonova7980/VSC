@@ -1,0 +1,94 @@
+$font: Arial, Helvetica, sans-serif;
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1280px;
+
+body {
+  font-family: $font;
+  font-style: normal;
+}
+
+.modal {
+  max-width: 450px;
+  margin: 10px;
+  border: 1px solid blue;
+  border-radius: 4px;
+
+  @media (min-width: $tablet) {
+    margin: 30px auto;
+  }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+  background-color: blue;
+  border-radius: 4px;
+}
+
+.modal-body {
+  flex: 1 1 auto;
+  padding: 10px;
+}
+
+.heading {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.list-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.radio-text {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.list-text {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 450px;
+  padding: 7px 10px;
+  margin: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.button {
+  padding: 10px 0;
+  display: block;
+  width: 40%;
+  margin: 4% auto;
+  background: blue;
+  border: 1px solid blue;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+#errorMessageBrand,
+#errorMessageAge,
+#errorMessageMileage {
+  color: red;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 3px 10px;
+}

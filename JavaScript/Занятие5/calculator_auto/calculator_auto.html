@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Normalize.css" rel="stylesheet" />
+    <title>Calculator auto</title>
+    <link href="calculator_auto.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-header">
+        <h1 class="heading">Калькулятор стоимости авто</h1>
+      </div>
+      <div class="modal-body">
+        <form name="form">
+          <p class="text">Марка</p>
+          <select class="list-text" name="brand" id="brand">
+            <option value="" selected>Марка</option>
+            <option value="500000">Audi</option>
+            <option value="550000">BMW</option>
+            <option value="300000">Chery</option>
+            <option value="350000">Ford</option>
+            <option value="400000">Haval</option>
+            <option value="250000">Hyunday</option>
+            <option value="150000">Lada</option>
+            <option value="320000">Mazda</option>
+            <option value="340000">Nissan</option>
+            <option value="440000">Scoda</option>
+            <option value="420000">Suzuki</option>
+          </select>
+          <div id="errorMessageBrand"></div>
+          <p class="text">Привод</p>
+          <div>
+            <input type="radio" name="drive" value="10000" id="front" checked/>
+            <label for="front" class="radio-text">Передний</label>
+          </div>
+          <div>
+            <input type="radio" name="drive" value="50000" id="full" />
+            <label for="full" class="radio-text">Полный</label>
+          </div>
+          <p class="text">Возраст автомобиля</p>
+          <div>
+            <input type="radio" name="age" value="1.5" id="age3" checked/>
+            <label for="age3" class="radio-text">Меньше 3 лет</label>
+          </div>
+          <div>
+            <input type="radio" name="age" value="1.3" id="age5" />
+            <label for="age5" class="radio-text">От 3 до 5 лет</label>
+          </div>
+          <div>
+            <input type="radio" name="age" value="1.2" id="age7" />
+            <label for="age7" class="radio-text">От 5 до 7 лет</label>
+          </div>
+          <input type="radio" name="age" value="1" id="age8" />
+          <label for="age8" class="radio-text">Больше 7 лет</label>
+          <div id="errorMessageAge"></div>
+          <p class="text">Пробег</p>
+          <select class="list-text" name="mileage" id="mileage">
+            <option value="" selected>Пробег</option>
+            <option value="300000">до 20 000 км</option>
+            <option value="200000">от 20 000 до 50 000 км</option>
+            <option value="100000">от 50 000 до 100 000 км</option>
+            <option value="50000">от 100 000 до 150 000 км</option>
+            <option value="20000">больше 150 000 км</option>
+          </select>
+          <div id="errorMessageMileage"></div>
+          <p class="text">Дополнительные параметры</p>
+          <div>
+            <input
+              type="checkbox"
+              name="additional-parameters"
+              value="5000"
+              id="parameter1"
+            />
+            <label for="parameter1" class="radio-text">Зимняя резина</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="additional-parameters"
+              value="10000"
+              id="parameter2"
+            />
+            <label for="parameter2" class="radio-text">Кожаный салон</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="additional-parameters"
+              value="7000"
+              id="parameter3"
+            />
+            <label for="parameter3" class="radio-text"
+              >Обогрев лобового стекла</label
+            >
+          </div>
+          <button type="button" class="button" onclick="calculate ();">
+            Рассчитать
+          </button>
+          <div>
+            <p class="text">Стоимость автомобиля:</p>
+            <span id="total-price">0</span> рублей
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="calculator_auto.js"></script>
+  </body>
+</html>
