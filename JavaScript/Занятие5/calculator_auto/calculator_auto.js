@@ -21,7 +21,9 @@ document.getElementById("errorMessageBrand").innerHTML = "";
 document.getElementById("errorMessageMileage").innerHTML = "";
 document.getElementById("errorMessageAge").innerHTML = "";
 
-/*for (const input of inputs) {
+/*Функция для вывода суммы при каждом нажатии 
+
+for (const input of inputs) {
   input.addEventListener("input", function () {
     calculate();
   });
@@ -35,14 +37,13 @@ mileage.addEventListener('change', function() {
   calculate();
 });
 
- 
-calculate();*/
+ calculate();*/
 
 function calculate() {
   let totalPrice = 0;
 
   for (const itemBrand of selectBrands) {
-    if (itemBrand.selected) totalPrice = totalPrice+parseInt(itemBrand.value);
+    if (itemBrand.selected) totalPrice = totalPrice + parseInt(itemBrand.value);
   }
 
   if (brand.value == "") {
@@ -50,6 +51,7 @@ function calculate() {
       "Выберите марку автомобиля";
     return false;
   }
+  document.getElementById("errorMessageBrand").style.display = "none";
 
   for (const radio of radioDrive) {
     if (radio.checked) {
@@ -57,13 +59,29 @@ function calculate() {
     }
   }
 
+  /*Попытка вывести надпись 'Выберите возраст...' если не нажата ни одна кнопка радиобаттон
+  
+  let isEmpty = true;
+  for (i = 0; i < radioAge.length; i++) {
+    if (radioAge[i].checked === false) {
+      isEmpty = false;
+    } 
+  }
+ 
+    for (const radio of radioAge) {
+      if (radio.checked) {
+        totalPrice = totalPrice * parseFloat(radio.value);
+      }
+      if (isEmpty = false) {
+        document.getElementById("errorMessageAge").innerHTML +=
+          "Выберите возраст автомобиля";
+      }
+    }*/
+
   for (const radio of radioAge) {
     if (radio.checked) {
       totalPrice = totalPrice * parseFloat(radio.value);
     }
-    /*else {document.getElementById("errorMessageAge").innerHTML +=
-      "Выберите возраст автомобиля"; 
-    }*/
   }
 
   for (const itemMileag of selectMileages) {
@@ -76,6 +94,7 @@ function calculate() {
       "Выберите пробег";
     return false;
   }
+  document.getElementById("errorMessageMileage").style.display = "none";
 
   if (parameter1.checked) {
     totalPrice = totalPrice + parseInt(parameter1.value);
@@ -91,6 +110,3 @@ function calculate() {
 
   totalPriceElement.innerText = totalPrice;
 }
-
-
-
