@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Выберите бренд автомобиля:</div>
+    <select id="brands" onchange="selectBrand(this)" class="select">
+        <option value="none">Not selected</option>
+        <option value="audi">Audi</option>
+        <option value="honda">Honda</option>
+        <option value="suzuki">Suzuki</option>
+        <option value="volvo">Volvo</option>
+    </select>
+    <select id="models" style="display: none;" class="select"></select>
+    <script src="auto_na_letu.js"></script>
+</body>
+</html>

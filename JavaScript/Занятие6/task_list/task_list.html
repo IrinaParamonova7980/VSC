@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .done {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <input id="newTask" />
+    <button onclick="addTask()">Добавить задачу</button>
+
+    <script>
+      let tasks = ["Погулять", "Постричься", "Поспать"];
+
+      function finishTask(sender) {
+        sender.parentElement.classList.toggle("done");
+      }
+
+      function addTask() {
+        let name = document.getElementById("newTask").value;
+        tasks.push(name);
+        generateTasks();
+      }
+      function generateTasks() {
+        let optionString = "";
+        for (let task of tasks) {
+          optionString += `<div><input type="checkbox" onchange='finishTask(this)'>${task}<button>Удалить</button></div>`;
+        }
+        document.getElementById("container").innerHTML = optionString;
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        generateTasks();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ham {
+        position: absolute;
+        z-index: 1000;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        background-image: url(Hamburger_icon.svg.png);
+        background-size: 100%;
+      }
+
+      .showClose {
+        background-image: url(krestik.png);
+      }
+
+      .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: darkgray;
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        display: none;
+      }
+
+      .showNaw {
+        display: block;
+      }
+
+      .menuLink {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="ham" onclick="toggleHamburger()"></button>
+    <nav class="navbar">
+      <ul>
+        <li><a class="menuLink" href="#">Home</a></li>
+        <li><a class="menuLink" href="#">Profile</a></li>
+        <li><a class="menuLink" href="#">About</a></li>
+        <li><a class="menuLink" href="#">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function toggleHamburger() {
+        let navbar = document.querySelector(".navbar");
+        let ham = document.querySelector(".ham");
+
+        navbar.classList.toggle("showNaw");
+        ham.classList.toggle("showClose");
+      }
+    </script>
+  </body>
+</html>
