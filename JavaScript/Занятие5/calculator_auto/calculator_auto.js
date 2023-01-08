@@ -59,30 +59,35 @@ function calculate() {
     }
   }
 
-  /*Попытка вывести надпись 'Выберите возраст...' если не нажата ни одна кнопка радиобаттон
-  
+  //Попытка вывести надпись 'Выберите возраст...' если не нажата ни одна кнопка радиобаттон
+
   let isEmpty = true;
   for (i = 0; i < radioAge.length; i++) {
-    if (radioAge[i].checked === false) {
+    if (radioAge[i].checked === true) {
       isEmpty = false;
-    } 
+    }
   }
- 
-    for (const radio of radioAge) {
-      if (radio.checked) {
-        totalPrice = totalPrice * parseFloat(radio.value);
-      }
-      if (isEmpty = false) {
-        document.getElementById("errorMessageAge").innerHTML +=
-          "Выберите возраст автомобиля";
-      }
-    }*/
+
+  if (isEmpty === true) {
+    document.getElementById("errorMessageAge").innerHTML +=
+      "Выберите возраст автомобиля";
+  } else {
+    document.getElementById("errorMessageAge").innerHTML = "";
+  }
 
   for (const radio of radioAge) {
     if (radio.checked) {
       totalPrice = totalPrice * parseFloat(radio.value);
     }
   }
+
+  console.log(radioAge[0]);
+
+  /*for (const radio of radioAge) {
+    if (radio.checked) {
+      totalPrice = totalPrice * parseFloat(radio.value);
+    }
+  }*/
 
   for (const itemMileag of selectMileages) {
     if (itemMileag.selected)
